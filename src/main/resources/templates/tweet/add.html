@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{layout}">
+    <head>
+        <title>[[#{tweet.add.headline}]]</title>
+    </head>
+    <body>
+        <div layout:fragment="content">
+            <div class="d-flex flex-wrap mb-4">
+                <h1 class="flex-grow-1">[[#{tweet.add.headline}]]</h1>
+                <div>
+                    <a th:href="@{/tweets}" class="btn btn-secondary">[[#{tweet.add.back}]]</a>
+                </div>
+            </div>
+            <div th:replace="~{fragments/forms::globalErrors('tweet')}" />
+            <form th:action="${requestUri}" method="post">
+                <div th:replace="~{fragments/forms::inputRow(object='tweet', field='dateCreated', inputClass='js-datetimepicker')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='tweet', field='numberOfLikes', type='number')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='tweet', field='sourceOfTweet')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='tweet', field='tweetContent')}" />
+                <input type="submit" th:value="#{tweet.add.headline}" class="btn btn-primary mt-4" />
+            </form>
+        </div>
+    </body>
+</html>
