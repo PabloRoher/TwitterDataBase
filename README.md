@@ -1,9 +1,9 @@
 # TwitterDataBase
 
-#Repositorio: 
+# Repositorio: 
 https://github.com/PabloRoher/TwitterDataBase.git
 
-#Implementación de Programación Concurrente en Bases de Datos NoSQL
+# Implementación de Programación Concurrente en Bases de Datos NoSQL
 
 Objetivos de la práctica:
 
