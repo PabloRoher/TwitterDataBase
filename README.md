@@ -3,6 +3,14 @@
 #Repositorio: 
 https://github.com/PabloRoher/TwitterDataBase.git
 
+#Implementación de Programación Concurrente en Bases de Datos NoSQL
+
+Objetivos de la práctica:
+
+En esta práctica, nuestro objetivo será obtener una comprensión práctica de cómo aplicar los principios de la programación concurrente en un entorno de base de datos NoSQL. Implementaremos diferentes estrategias de programación concurrente y evaluaremos su rendimiento al manejar grandes volúmenes de datos.
+
+En la era actual de Big Data, las organizaciones generan y consumen cantidades enormes de información diariamente. Con tanta información disponible, las bases de datos tradicionales SQL pueden resultar ineficientes para manejar volúmenes de datos tan masivos y estructuras de datos complejas. Por lo tanto, las bases de datos NoSQL se han convertido en una elección popular debido a su escalabilidad y flexibilidad. Sin embargo, la eficiencia de estas bases de datos puede mejorarse aún más con el uso de la programación concurrente.
+
 This app was created with Bootify.io - tips on working with the code [can be found here](https://bootify.io/next-steps/).
 Feel free to contact us for further questions.
 
