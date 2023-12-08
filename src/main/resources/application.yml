@@ -1,7 +1,7 @@
 spring:
   data:
     mongodb:
-      uri: ${MONGODB_DATABASE_URL:mongodb://localhost:27017/TwitterDataBase}
+      uri: mongodb+srv://pablrohe:GHUBF699IIA7cYos@cluster0.el8qce5.mongodb.net/TwitterDataBase?retryWrites=true&w=majority
       auto-index-creation: true
   mvc:
     format:
@@ -10,6 +10,6 @@ spring:
       time: HH:mm:ss
   docker:
     compose:
-      lifecycle-management: start-only
+      lifecycle-management: none
 springdoc:
   pathsToMatch: /api/**
